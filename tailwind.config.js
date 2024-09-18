@@ -8,6 +8,7 @@ export default {
     fontFamily: {
       'inter': ['"Inter"', 'sans-serif'],
       'racing': ['"Racing Sans One"', 'sans-serif'],
+      'jura': ['"Jura"', 'sans-serif'],
     },
   },
   plugins: [],

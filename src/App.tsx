@@ -1,7 +1,16 @@
 import './App.css'
 
-import heroImg from './assets/hero.png';
-import dumbbellImg from './assets/dumbbell.png';
+import heroImg from './assets/hero.png'
+import dumbbellImg from './assets/dumbbell.png'
+import backgroundTextImg from './assets/background-text.png'
+
+import machineImg from './assets/workout/machine.png'
+import boxingImg from './assets/workout/boxing.png'
+import tennisImg from './assets/workout/tennis.png'
+import pilatesImg from './assets/workout/pilates.png'
+import manualImg from './assets/workout/manual.png'
+import ptImg from './assets/workout/pt.png'
+import Workout from './components/workout/Workout'
 
 const App: React.FC = () => {
 
@@ -21,7 +30,7 @@ const App: React.FC = () => {
           </ul>
           <ul className="flex items-center gap-x-6 text-xl">
             <li>Sign In</li>
-            <li className="bg-[#FAFF00] rounded-[48px] px-5 py-4">Join Us</li>
+            <li className="bg-[#F9F00C] rounded-[48px] px-5 py-4">Join Us</li>
           </ul>
         </nav>
       </header>
@@ -38,12 +47,26 @@ const App: React.FC = () => {
               Discover the Strength.
             </div>
             <div className="hero-button">
-              <button className="bg-[#FAFF00] rounded-[48px] px-5 py-4 text-xl">Join the Flux</button>
+              <button className="bg-[#F9F00C] rounded-[48px] px-5 py-4 text-xl">Join the Flux</button>
             </div>
           </div>
         </div>
 
-        <div className="section">
+        <div className="mt-24 h-[1024px] flex items-center">
+            <img src={backgroundTextImg} className='absolute -z-10' />
+
+            <div className="grid grid-cols-3 grid-rows-2 gap-6 px-12 py-8">
+              <Workout title="Machine Equipment" img={machineImg} />
+              <Workout title="Boxing Classes" img={boxingImg} />
+              <Workout title="Pilates Classes" img={pilatesImg} />
+              <Workout title="Personal Training (PT)" img={ptImg} />
+              <Workout title="Manual Equipment" img={manualImg} />
+              <Workout title="Tennis Court" img={tennisImg} />
+            </div>
+        </div>
+
+
+        <div className="mt-24">
           <img src={dumbbellImg} className="w-auto h-60 mx-auto"/>
         </div>
 
