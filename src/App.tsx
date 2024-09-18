@@ -52,7 +52,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-24 h-[1024px] flex items-center">
+        <div className="mt-24 h-[1024px] flex justify-center items-center">
             <img src={backgroundTextImg} className='absolute -z-10' />
 
             <div className="grid grid-cols-3 grid-rows-2 gap-6 px-12 py-8">
